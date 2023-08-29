@@ -1,36 +1,48 @@
 html {
     font-family: sans-serif;
+    color: white;
   }
 
 body {
   background-color: #294d61;
   justify-content: center; 
   align-items: center;
+  font-family: 'rainyhearts';
+  text-align: center;
+  font-size: 27px; 
 }
 
-@font-face { 
-  font-family: RMT;
-  src: url('fonts/RMT.ttf') format('truetype');
+@font-face {
+  font-family: 'crang';
+  src: url('acvititie-04/fonts/Crang.ttf') format('truetype');
 }
-#main-title {
-  text-align: center;
-  font-size: 125px;
-  font-family: RMT, sans-serif;
+
+@font-face {
+  font-family:'rainyhearts';
+
+  src: url('acvititie-04/fonts/rainyhearts.ttf') format('opentype');
 }
 
 header { 
   background-color: #072e33;
+  padding: 25px;
+}
+
+#main-title {
+  text-align: center;
+  font-size: 75px;
+  font-family: crang, sans-serif;
 }
 
 .about-game {
-
+  text-align: center;
+  margin:10px;
 }
 
-#rules-title { 
-  font-size: 37px;;  
+#about-title { 
+  font-size: 37px;  
+  margin-top: 184px;
 }
-  
-
   
 .form { 
   width: 100%;
@@ -66,9 +78,9 @@ Button {
 
 footer { 
   background-color: #072e33;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-
+  position: absolute;
+  bottom:0;
+  text-align: center;
+  width: 100%;
+  padding: 25px;
 }
