@@ -1,6 +1,5 @@
 html {
     font-family: sans-serif;
-
   }
 
 body {
@@ -8,34 +7,33 @@ body {
   justify-content: center; 
   align-items: center;
 }
- 
-#main-title {
-  
-}
 
 @font-face { 
   font-family: RMT;
-  src: url('/fonts/RMT.ttf') format('truetype');
+  src: url('fonts/RMT.ttf') format('truetype');
 }
-
-header {
+#main-title {
+  text-align: center;
   font-size: 125px;
   font-family: RMT, sans-serif;
+}
+
+header { 
   background-color: #072e33;
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-  flex-direction: row;
+}
+
+.about-game {
+
+}
+
+#rules-title { 
+  font-size: 37px;;  
 }
   
-.paragraph { 
-  text-align: center;
-  font-size: 25px;
-  margin-top: 150px;  
-}
+
   
 .form { 
-  width: 65%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,10 +43,32 @@ header {
   
 .form input[type="number"] {
   margin-left: 10px;  
-  width: 250px;
+  width: 150px;
+  border-radius: 50px;
 }
 
+.form input[type="submit"] {
+  margin-left: 10px;
+  border-radius: 50px;
+  background-color: #0c7075;
+}
 .lastResult {
   color: white;
   padding: 3px;
+}
+
+
+Button { 
+  margin-left: 10px;
+  border-radius: 50px;
+  background-color: #0c7075;
+}
+
+footer { 
+  background-color: #072e33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+
 }
