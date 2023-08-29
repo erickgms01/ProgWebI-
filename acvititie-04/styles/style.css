@@ -1,0 +1,66 @@
+html {
+    font-family: sans-serif;
+
+  }
+
+  body {
+    background-color: #1b3358;
+    justify-content: center; 
+    align-items: center;
+  
+  }
+  @font-face { 
+    font-family: SoX;
+    src: url('  a') format('truetype');
+    font-weight: normal; 
+  }
+  
+  main {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: row;
+    
+  }
+  header {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: row;
+    font-size: 150px;
+    font-family: SoX;
+  }
+  
+  .paragraph { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin-top: 150px;
+    
+  }
+  
+  .form { 
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin: 15px; 
+
+  }
+  
+  .form input[type="number"] {
+    margin-left: 10px;  
+    width: 250px;
+  }
+
+  .lastResult {
+    color: white;
+    padding: 3px;
+  }
