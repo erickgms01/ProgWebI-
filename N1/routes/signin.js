@@ -1,0 +1,8 @@
+var express = require('express');
+var router = express.Router();
+
+router.get('/login/signin/', (req, res) => {
+    res.render('login/signin.ejs'); 
+});
+
+module.exports = router;
