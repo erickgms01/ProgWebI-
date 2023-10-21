@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-router.get('/musicPlayer', (req, res) => {
+router.get('/', (req, res) => {
     res.render('musicPlayer/musicPlayer.ejs')
 })
 
