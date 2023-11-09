@@ -12,7 +12,7 @@ const signinRoute = require('./routes/signin.js');
 const signupRoute = require('./routes/signup.js');
 const mp3Route = require('./routes/musicPlayer.js')
 
-app.use('/login', loginRoute);
+app.use('/', loginRoute)
 app.use('/login/signin', signinRoute);  
 app.use('/login/signup', signupRoute); 
 app.use('/mp3', mp3Route);     

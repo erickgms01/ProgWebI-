@@ -8,30 +8,18 @@ body{
   padding:0px;
   margin: 0px;
   font-family: 'Roboto', sans-serif;
-  height: 100%; /* Defina a altura da página como 100% */
-  overflow: hidden; /* Remova as barras de rolagem */
+  height: 100%;
+  overflow: hidden; 
 }
 .main-login{
   width: 100vw;
   height: 100vh;
-  background:#1c1c1c;
+  background-image: linear-gradient(rgba(0,0,50,0.8), rgba(0,0,50,0.8)), url(/images/loginImages/music.jpg);
   display: flex;
   justify-content:center;
   align-items:center;
 }
-.left-login{
-  width:50vw;
-  height:100vh;
-  display: flex;
-  justify-content:center;
-  align-items:center;
-  flex-direction:column;
-}
-
-.image-login{
-  width:35vw;
-}
-.right-login{
+.login{
   width:50vw;
   height:100vh;
   display: flex;
@@ -45,38 +33,11 @@ body{
   align-items:center;
   flex-direction:column;
   padding: 30px 35px;
-  background:#2f2841;
+  background:#ffffff;
   border-radius:20px;
   box-shadow:0px 10px 40px #00000056;
 }
 
-.textfield{
-  width:100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  margin: 10px 0;
-}
-.textfield > input{
-  width:100%;
-  border:none;
-  border-radius:10px;
-  padding:15px;
-  background:#514869;
-  color:#f0ffffde;
-  font-size:12pt;
-  box-shadow:0px 10px 40px #00000056;
-  outline:none;
-  box-sizing:border-box;
-}
-.textfield > label{
-  color:#555;
-  margin-bottom: 10px;
-}
-.textfield > input::placeholder{
-  color: #555;
-}
 .btn-login{
   width: 100%;
   padding: 5px 0px;
