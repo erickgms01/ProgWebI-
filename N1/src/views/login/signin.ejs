@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Spotify2</title>
+    <link rel="stylesheet" href="/stylesheets/login/signin.css">
+    <script src="https://kit.fontawesome.com/e25f884761.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1>Sign In</h1>
+            <form action="/login/signin/login/password" method="POST">  
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+
+                <button type="submit">Sign In</button>
+            </form>
+                    
+            <p>Losted Password? <a href="#">Click Here</a></p>
+            <div class="btn-field">
+                <a href="/mp3" class="signinBtn"> <h4>Sign In </h4></a>
+            </div> 
+        </div>
+    </div>
+
+    <script src="/scripts/script.js"></script>
+</body>
+</html>
