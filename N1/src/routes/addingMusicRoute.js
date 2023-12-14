@@ -6,6 +6,8 @@ router.get('/', (req, res) => {
     res.render('musicPlayer/addingMusic.ejs');
 })
 
-router.post('/addMusic', musicController.addMusic);
+router.post('/addMusic/enviar', musicController.addMusic);
+
+router.get('/api/music', musicController.getMusicList);
 
 export default router;

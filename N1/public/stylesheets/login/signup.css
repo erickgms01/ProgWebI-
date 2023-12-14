@@ -8,7 +8,7 @@
 .container{
     width: 100%;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(0,0,50,0.8), rgba(0,0,50,0.8)), url(/images/loginImages/music.jpg);
+    background-color: #f86d92;
     background-position: center;
     background-size: cover;
     position: relative;
@@ -29,7 +29,7 @@
 .form-box h1{
     font-size: 30px;
     margin-bottom: 50px;
-    color: #3c00a0;
+    color: #f86d92;
     position:relative
 }
 
@@ -38,7 +38,7 @@
     width: 30px;
     height: 4px;
     border-radius: 3px;
-    background: #3c00a0;
+    background: #f86d92;
     position: absolute;
     bottom: -12px;
     left: 50%;
@@ -76,24 +76,25 @@ form p {
 
 form p a{
     text-decoration: none;
-    color: #3c00a0;
+    color: #f86d92;
 }
-
 
 .btn-field {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    background-color: #f86d92;
+    color: #fff;
+    border: none;
+    padding: 17px 50px;
+    margin: 20px ;
+    font-size: 16px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
 
-.btn-field a {
-    flex-basis: 48%;
-    background: #3c00a0; 
-    color: #fff; 
-    height: 40px;
-    border-radius: 20px;    
+.btn-field:hover {
+    background-color: #7a102c; /* Change color on hover */
 }
 
 .input-group {
     height: 280px;
-}
+}   
