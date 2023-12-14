@@ -81,12 +81,14 @@ app.use(express.static(pathPublic));
 
 // Definindo rotas
 import musicplayerRoute from './routes/musicPlayerRoute.js';
+import addingMusicRoute from './routes/addingMusicRoute.js';
 import loginRoute from './routes/loginRoute.js';
 import signinRoute from './routes/signInRoute.js';
 import signupRoute from './routes/signUpRoute.js';
 
 // Configurando Rotas
 app.use('/', musicplayerRoute);
+app.use('/addMusic', addingMusicRoute);
 app.use('/login', loginRoute);
 app.use('/login/signin', signinRoute);
 app.use('/login/signup', signupRoute);

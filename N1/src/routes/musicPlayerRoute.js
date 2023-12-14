@@ -6,4 +6,6 @@ router.get('/', (req, res) => {
     res.render('musicPlayer/musicPlayer.ejs')
 });
 
+
+
 export default router;

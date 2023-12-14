@@ -14,7 +14,7 @@ body{
 .main-login{
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(rgba(0,0,50,0.8), rgba(0,0,50,0.8)), url(/images/loginImages/music.jpg);
+  background-image: linear-gradient(rgba(0,0,50,0.8), rgba(0,0,50,0.8)), url(/images/loginImages/background.jpg);
   display: flex;
   justify-content:center;
   align-items:center;
