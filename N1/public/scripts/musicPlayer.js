@@ -24,7 +24,7 @@
             {
                 artist: "Tom jones ",
                 name: "It's Not Unusual",
-                url: "../music/its_not_unusual.mp3",
+                url: "../assets/music/its_not_unusual.mp3",
                 picture: "../assets/cover/its_not_unusual.jpg"
             }, 
             { 
@@ -36,8 +36,8 @@
             {
                 artist: "Ben E. King",
                 name: "Stand by Me",
-                url: "../music/stand_by_me.mp3",
-                picture: "../cover/stand_by_me.jpg"        
+                url: "../assets/music/stand_by_me.mp3",
+                picture: "../assets/cover/stand_by_me.jpg"        
             }
         ];
         
