@@ -8,7 +8,7 @@
 .container{
     width: 100%;
     min-height: 100vh;
-    background-color: #f86d92;
+    background-color: #fcad1c;
     background-position: center;
     background-size: cover;
     position: relative;
@@ -29,7 +29,7 @@
 .form-box h1{
     font-size: 30px;
     margin-bottom: 50px;
-    color: #f86d92;
+    color: #fcad1c;
     position:relative
 }
 
@@ -38,7 +38,7 @@
     width: 30px;
     height: 4px;
     border-radius: 3px;
-    background: #f86d92;
+    background: #fcad1c;
     position: absolute;
     bottom: -12px;
     left: 50%;
@@ -76,11 +76,11 @@ form p {
 
 form p a{
     text-decoration: none;
-    color: #f86d92;
+    color: #fcad1c;
 }
 
 .btn-field {
-    background-color: #f86d92;
+    background-color: #fcad1c;
     color: #fff;
     border: none;
     padding: 17px 50px;
@@ -92,7 +92,7 @@ form p a{
 }
 
 .btn-field:hover {
-    background-color: #7a102c; /* Change color on hover */
+    background-color: #94650d; 
 }
 
 .input-group {

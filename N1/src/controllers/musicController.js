@@ -18,15 +18,5 @@ export const musicController = {
         } catch (err) {
             res.status(400).json({ message: err.message });
         }
-    },
-    getMusicList: async () => {
-        try {
-            const musicList = await Music.find({}); // Recupera todas as músicas no banco de dados
-            return musicList;
-        } catch (error) {
-            console.error('Erro ao buscar músicas:', error);
-            return [];
-        }
     }
-    
 };

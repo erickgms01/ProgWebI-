@@ -68,6 +68,12 @@ app.use((req, res, next) => {
   next();
 });
 
+app.use((req, res, next) => {
+  res.locals.user = req.user || null;
+  next();
+});
+
+
 // Permitindo requisições do corpo dos formulários
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -92,6 +98,7 @@ app.use('/addMusic', addingMusicRoute);
 app.use('/login', loginRoute);
 app.use('/login/signin', signinRoute);
 app.use('/login/signup', signupRoute);
+
 
 // O servidor começa a 'rodar' na porta, apenas após a conexão com o banco de dados
 app.on('pronto', () => {

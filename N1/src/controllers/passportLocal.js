@@ -14,7 +14,6 @@ passport.use(new LocalStrategy( { usernameField: 'email', session: false},
             return done(err);
         }
     }
-    
 ));
 
 passport.serializeUser(function(user, cb) {

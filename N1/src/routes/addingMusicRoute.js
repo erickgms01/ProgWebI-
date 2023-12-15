@@ -8,6 +8,4 @@ router.get('/', (req, res) => {
 
 router.post('/addMusic/enviar', musicController.addMusic);
 
-router.get('/api/music', musicController.getMusicList);
-
 export default router;
