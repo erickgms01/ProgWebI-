@@ -20,27 +20,9 @@
         
         var playPreviousTrackButton = $('#play-previous'), playNextTrackButton = $('#play-next'), currIndex = -1;
         
-        var songs = [
-            {
-                artist: "Tom jones ",
-                name: "It's Not Unusual",
-                url: "../assets/music/its_not_unusual.mp3",
-                picture: "../assets/cover/its_not_unusual.jpg"
-            }, 
-            { 
-                artist: "Grover Washington",
-                name: "Just the Two of Us",
-                url: "../assets/music/just_the_two_of_us.mp3",
-                picture: "../assets/cover/just_the_two_of_us.jpg"    
-            },
-            {
-                artist: "Ben E. King",
-                name: "Stand by Me",
-                url: "../assets/music/stand_by_me.mp3",
-                picture: "../assets/cover/stand_by_me.jpg"        
-            }
-        ];
-        
+        //Array que armazena todas as músicas buscadas no banco de dados
+        var songs = [];
+
         function shuffle(a) {
             var j, x, i;
             for (i = a.length - 1; i > 0; i--) {
@@ -258,5 +240,15 @@
             playNextTrackButton.on('click',function(){ selectTrack(1);});
         }
         
-        initPlayer();
+        //Função assíncrona que pega as músicas do banco
+        fetch('/listMusic')
+        .then(response => response.json())
+        .then(data => {
+      
+            songs = data; 
+            console.log('Lista de músicas recebida:', songs);
+            initPlayer();
+            })
+        .catch(error => console.error(error));
+        
     });

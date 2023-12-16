@@ -73,6 +73,10 @@ app.use((req, res, next) => {
   next();
 });
 
+app.use((req, res, next) => {
+  res.locals.songs = req.songs || null;
+  next(); 
+});
 
 // Permitindo requisições do corpo dos formulários
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -80,6 +84,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Para visualização dos arquivos .ejs
 app.set('views', __dirname + '/views')
 app.set('view engine', 'ejs')
+
 
 // Definindo local dos arquivos estáticos
 const pathPublic = path.join(__dirname, '..', 'public');
@@ -98,7 +103,6 @@ app.use('/addMusic', addingMusicRoute);
 app.use('/login', loginRoute);
 app.use('/login/signin', signinRoute);
 app.use('/login/signup', signupRoute);
-
 
 // O servidor começa a 'rodar' na porta, apenas após a conexão com o banco de dados
 app.on('pronto', () => {
