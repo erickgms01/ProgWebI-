@@ -104,7 +104,7 @@ app.use('/login', loginRoute);
 app.use('/login/signin', signinRoute);
 app.use('/login/signup', signupRoute);
 
-// O servidor começa a 'rodar' na porta, apenas após a conexão com o banco de dados
+//O servidor roda ao  
 app.on('pronto', () => {
   app.listen(port, () => {
     console.log(`Servidor rodando na porta ${port}`);

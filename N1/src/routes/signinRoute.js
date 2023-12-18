@@ -7,10 +7,10 @@ router.get('/', (req, res) => {
 })
 
 router.post('/login/password', passport.authenticate('local', {
-    successReturnToOrRedirect: '/',
-    failureRedirect: '/login',
-    failureMessage: true
-  }));
+  successReturnToOrRedirect: '/',
+  failureRedirect: '/login',
+  failureMessage: true
+}));
 
   router.post('/logout', function(req, res, next) {
     req.logout(function(err) {

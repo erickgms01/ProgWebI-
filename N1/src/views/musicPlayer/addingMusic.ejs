@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Adicionar Música</title>
+    <link rel="stylesheet" href="/stylesheets/musicPlayer/addingMusic.css">
 </head>
 <body>
-    <h1>Adicionar Nova Música</h1>
-    <form action="/addMusic/addMusic/enviar" method="POST">
-        <label for="name">Nome da Música:</label><br>
-        <input type="text" id="name" name="name"><br><br>
-
-        <label for="artist">Artista:</label><br>
-        <input type="text" id="artist" name="artist"><br><br>
-
-        <label for="cover">URL da Capa:</label><br>
-        <input type="text" id="picture" name="picture"><br><br>
-
-        <label for="src">URL da Música:</label><br>
-        <input type="text" id="url" name="url"><br><br>
-
-        <input type="submit" value="Adicionar Música">
-    </form>
+    <div class="container">
+        <h1>Adicionar Nova Música</h1>
+        <form action="/addMusic/addMusic/enviar" method="POST">
+            <label for="name">Nome da Música:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+        
+            <label for="artist">Artista:</label><br>
+            <input type="text" id="artist" name="artist"><br><br>
+        
+            <label for="cover">URL da Capa:</label><br>
+            <input type="text" id="picture" name="picture"><br><br>
+        
+            <label for="src">URL da Música:</label><br>
+            <input type="text" id="url" name="url"><br><br>
+        
+            <input type="submit" value="Adicionar Música">
+        </form>
+    </div>
+    <script src="/scripts/addingMusic.js"></script>
 </body>
 </html>

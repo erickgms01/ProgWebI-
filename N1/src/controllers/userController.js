@@ -19,7 +19,7 @@ export const createUser = async (req, res) => {
         // Salva o novo usuário no banco de dados
         await newUser.save();
         const userId = req.user.id;
-        const user = await userModel.findById(userId);
+        const user = await UserModel.findById(userId);
 
         if (!user) {
             return res.status(404).json({ erro: 'Usuário não encontrado.' });
@@ -34,8 +34,7 @@ export const createUser = async (req, res) => {
                 console.error('Erro ao fazer login após criar novo usuário: ', err);
                 return res.status(500).json({ erro: 'Erro ao fazer login após criar usuário' });
             }
-
-            return  res.redirect('/')
+            res.redirect('/')
         });
 
     } catch (error) {

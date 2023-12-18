@@ -73,7 +73,7 @@
             ctMinutes = Math.floor(cM);
             ctSeconds = Math.floor(seekLoc - ctMinutes * 60);
             
-            if( (ctMinutes < 0) || (ctSeconds < 0) )
+            if( (ctMinutes   < 0) || (ctSeconds < 0) )
                 return;
             
             if( (ctMinutes < 0) || (ctSeconds < 0) )
@@ -236,10 +236,17 @@
             
             $(audio).on('timeupdate',updateCurrTime);
 
-            playPreviousTrackButton.on('click',function(){ selectTrack(-1);} );
-            playNextTrackButton.on('click',function(){ selectTrack(1);});
-        }
-        
+            playPreviousTrackButton.on('click', function() {
+                selectTrack(-1);
+                i.attr('class', 'fas fa-pause');
+            });
+            
+            playNextTrackButton.on('click', function() {
+                selectTrack(1);
+                i.attr('class', 'fas fa-pause');
+            });
+        }     
+
         //Função assíncrona que pega as músicas do banco
         fetch('/listMusic')
         .then(response => response.json())
